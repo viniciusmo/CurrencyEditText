@@ -29,6 +29,13 @@ public class CurrencyEditText extends EditText {
     /*
     PUBLIC METHODS
      */
+
+    public CurrencyEditText(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs,defStyleAttr);
+        init();
+        processAttributes(context, attrs);
+    }
+
     public CurrencyEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
